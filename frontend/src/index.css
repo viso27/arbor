@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0d1117; color: #e6edf3; }
+a { text-decoration: none; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0d1117; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 3px; }
+.tiptap p { margin: 0 0 8px; }
+.tiptap h1 { font-size: 20px; font-weight: 700; margin: 12px 0 8px; color: #e6edf3; }
+.tiptap h2 { font-size: 16px; font-weight: 700; margin: 10px 0 6px; color: #e6edf3; }
+.tiptap ul, .tiptap ol { padding-left: 20px; margin: 6px 0; }
+.tiptap li { margin: 3px 0; }
+.tiptap code { background: #21262d; padding: 2px 6px; border-radius: 4px; font-family: monospace; font-size: 12px; color: '#79c0ff'; }
+.react-flow__attribution { display: none; }
