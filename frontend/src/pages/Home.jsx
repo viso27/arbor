@@ -49,7 +49,7 @@ export default function Home() {
   // Socket.io live updates
   useEffect(() => {
     if (!user) return;
-    const socket = io('http://localhost:8000');
+    const socket = io(import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:8000');
     socket.emit('join_user', { user_id: user.id });
     socket.on('graph_updated', () => loadGraph());
     return () => socket.disconnect();
