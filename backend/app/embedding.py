@@ -15,15 +15,19 @@ async def embed_text(text: str) -> list:
                 "X-Title": "Arbor Knowledge Graph",
             },
             json={
-                "model": "text-embedding-ada-002",
+                "model": "nvidia/nemotron-3-embed-1b:free",
                 "input": text
             }
         )
+
         if not response.ok:
             raise Exception(f"{response.status_code} {response.text}")
-        embedding = response.json()["data"][0]["embedding"]
+
+        data = response.json()
+        embedding = data["data"][0]["embedding"]
         print(f"✅ Embedded — {len(embedding)} dims")
         return embedding
+
     except Exception as e:
         print(f"❌ Embedding error: {e}")
         raise Exception(f"Embedding failed: {str(e)}")
