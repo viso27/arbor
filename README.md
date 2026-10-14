@@ -5,6 +5,9 @@ Arbor is an AI-powered note-taking app that automatically discovers semantic rel
 Write a note. Arbor converts it into a vector embedding, finds semantically similar notes using MongoDB Atlas Vector Search, and connects them live in a React Flow graph.
  
 **🔗 Live Demo:** [arbor-topaz.vercel.app](arbor-topaz.vercel.app)
+Login credentials:
+email:23d159@psgitech.ac.in
+password:test123
 
  
 ---
